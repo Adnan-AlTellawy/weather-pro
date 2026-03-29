@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  background: #0f172a;
+  overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-to-br {
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+@layer utilities {
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
