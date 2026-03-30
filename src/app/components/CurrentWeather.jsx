@@ -7,7 +7,7 @@ export default function CurrentWeather({ weather, t, lang }) {
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="bg-white/10 backdrop-blur-xl p-6 md:p-8 rounded-3xl border border-white/20 shadow-2xl text-center relative"
+      className="bg-white/10 backdrop-blur-xl p-3 md:p-8 rounded-3xl border border-white/20 shadow-2xl text-center relative "
     >
       <h2 className="text-3xl font-bold mb-1 text-white">{weather.name}</h2>
       <p className="text-lg opacity-80 mb-4 capitalize text-cyan-100">
