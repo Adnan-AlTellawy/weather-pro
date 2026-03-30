@@ -24,7 +24,7 @@ export default function Forecast({ data, t, lang }) {
               )}
             </p>
             <img
-              src={`http://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
+              src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
               alt="icon"
               className="mx-auto w-12 h-12"
             />
