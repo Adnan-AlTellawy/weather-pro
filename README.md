@@ -34,7 +34,7 @@ Live demo: https://adnan-weather-pro.netlify.app
 git clone https://github.com/Adnan-AlTellawy/weather-pro.git
 cd weather-pro
 npm install
-3. Create a .env.local file in the project root (see .env.example) and add your key:
+3. Create a .env.local file in the project root (see .env.local) and add your key:
 
 NEXT_PUBLIC_WEATHER_KEY=your_api_key_here
 4. Start the development server:
